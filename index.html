@@ -30,57 +30,82 @@
 
   <div class="logo">PocketLog</div>
   <h1>Privacy Policy</h1>
-  <p class="subtitle">PocketLog &middot; Last updated: February 28, 2026</p>
+  <p class="subtitle">PocketLog &middot; Last updated: April 9, 2026</p>
 
   <h2>Overview</h2>
   <p>
     PocketLog is a personal expense tracking app built for simplicity and privacy.
-    Your financial data stays on your device. We do not collect, transmit, or store
-    any of your data on external servers.
+    Your transactions, notes, and preferences are stored on your device. We do not
+    use them to build a profile of you, and we do not sell your data.
+  </p>
+  <p>
+    To understand how the app is used and to improve stability and features, PocketLog
+    sends <strong>limited, non-identifying analytics events</strong> over the internet
+    (see <a href="#analytics">Analytics</a> below). This is separate from your saved
+    transaction content.
   </p>
 
-  <h2>Data Collection</h2>
-  <p>PocketLog does <strong>not</strong> collect any personal data. Specifically:</p>
+  <h2>What we do not collect</h2>
+  <p>PocketLog does <strong>not</strong> collect:</p>
   <ul>
     <li>No account creation or sign-up is required.</li>
-    <li>No analytics, tracking, or telemetry data is collected.</li>
-    <li>No data is sent over the internet. The app works entirely offline.</li>
+    <li>No access to your bank accounts or third-party financial services.</li>
+    <li>We do not upload your transaction descriptions, notes, or full transaction amounts for analytics.</li>
+    <li>We do not use your entries for advertising profiling.</li>
   </ul>
+
+  <h2 id="analytics">Analytics</h2>
+  <p>
+    We use <strong>Google Firebase Analytics</strong> to collect aggregated usage and
+    technical information that helps us improve the experience—for example, which
+    screens or flows are used, coarse success/error outcomes (such as export or import),
+    and generic feature-related parameters (such as broad amount ranges, not exact values).
+    These events do not include your free-text descriptions or notes.
+  </p>
+  <p>
+    Firebase may process device and app-instance identifiers and standard diagnostics
+    according to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google&rsquo;s policies</a>.
+    You can learn more about Firebase at
+    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase privacy and security</a>.
+  </p>
 
   <h2>Data Storage</h2>
   <p>
     All transaction data, preferences (currency, language, theme), and settings are
     stored locally on your device using on-device storage (MMKV / AsyncStorage).
-    This data never leaves your device unless you explicitly choose to export it
-    using the in-app export feature.
+    That data does not leave your device except when you explicitly export or share it,
+    or when limited analytics events are sent as described above.
   </p>
 
   <h2>Data Export &amp; Import</h2>
   <p>
     PocketLog allows you to export your transactions as a JSON file and import
     data from a JSON file. These operations are initiated entirely by you and use
-    your device's native share sheet. No data is uploaded to any server during
-    this process.
+    your device's native share sheet. Your backup file is not sent to 2411Labs
+    servers; it only goes where you choose (for example email or cloud storage).
+    This is separate from routine analytics described above.
   </p>
 
   <h2>Permissions</h2>
   <p>PocketLog requests only the minimum permissions necessary:</p>
   <ul>
-    <li><strong>Internet</strong> – Required by React Native for development builds. The production app does not make any network requests.</li>
+    <li><strong>Internet</strong> – Used in production for Firebase Analytics and related services, and for optional features that require network access (for example, in-app updates or ads where applicable).</li>
     <li><strong>Storage (Android 9 and below)</strong> – Used for exporting data to files on older Android versions.</li>
   </ul>
 
   <h2>Children's Privacy</h2>
   <p>
-    PocketLog does not knowingly collect any information from children. The app
-    does not collect information from any user regardless of age.
+    PocketLog is not directed at children. We do not knowingly collect personal
+    information from children. Analytics, as described above, is limited to
+    product-improvement usage data and does not include your transaction notes or
+    account-style profiles.
   </p>
 
   <h2>Changes to This Policy</h2>
   <p>
     If we update this privacy policy, the revised version will be posted on this
-    page with an updated date. Since PocketLog does not collect any data, changes
-    are unlikely but we will keep this policy current.
+    page with an updated &ldquo;Last updated&rdquo; date. We encourage you to review
+    this page periodically.
   </p>
 
   <h2>Contact</h2>
